@@ -79,7 +79,7 @@ const handleSubmit = async(e)=> {
   console.log(chatContainer.scrollHeight);
   const messageDiv = document.getElementById(uniqueId);
   loader(messageDiv);
-  const response = await fetch('https://tz-chatgpt-clone.onrender.com',{
+  const response = await fetch('https://tz-chatgpt-clone.onrender.com/',{
       method: 'POST',
       headers: {'Content-Type': 'application/json'},
       body: JSON.stringify({prompt: data.get('prompt')})
